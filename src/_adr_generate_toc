@@ -66,7 +66,7 @@ do
     status=${output_status:+": $("$adr_bin_dir/_adr_status" $f | tail -n 1)"}
 
 
-    echo "* [$title]($link) $status"
+    echo "* link:$link[$title] $status"
 done
 
 if [ ! -z $outro ]
