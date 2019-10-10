@@ -2,7 +2,7 @@
 set -e
 eval "$($(dirname $0)/adr-config)"
 
-## usage: adr generate toc [-i INTRO] [-o OUTRO] [-p LINK_PREFIX]
+## usage: adr generate toc [-i INTRO] [-o OUTRO] [-p LINK_PREFIX] [-s]
 ##
 ## Generates a table of contents in Markdown format to stdout.
 ##
@@ -13,7 +13,8 @@ eval "$($(dirname $0)/adr-config)"
 ## -p LINK_PREFIX   
 ##           prefix each decision file link with LINK_PREFIX.
 ##
-## Both INTRO and OUTRO must be in Markdown format.
+## -s        Disable output of status
+## Both INTRO and OUTRO must be in AsciiDoc format.
 
 args=$(getopt i:o:p:s $*)
 set -- $args

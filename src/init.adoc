@@ -9,7 +9,11 @@ Accepted
 
 == Context
 
-We need to record the architectural decisions made on this project.
+We need to record the architectural decisions made on this project to capture why certain decisions were made,
+and what considerations went into those decisions.
+
+These may be very technical in nature, or decisions that are significant in the context of other stakeholders 
+that the architecture is impacted by.
 
 == Decision
 
