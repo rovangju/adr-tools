@@ -19,7 +19,7 @@ args=$(getopt i:o:p:s $*)
 set -- $args
 
 link_prefix=
-output_status=
+output_status=1
 
 for arg
 do
@@ -34,7 +34,7 @@ do
             shift 2
             ;;
 	-s)
-	    output_status=1
+	    output_status=0
 	    shift
 	    ;;
         -p)
